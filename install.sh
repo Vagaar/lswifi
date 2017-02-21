@@ -20,7 +20,7 @@ NC='\033[0m'
 printf " ${green}Installing lswifi tool.${NC}\n"
 printf " Name of executable:.... ${yellow}$name${NC}\n"
 printf " Path to install:....... ${yellow}$path${NC}\n"
-echo " Copying filess.."
+echo " Copying files.."
 
 output=$( { cp $source_name $path$name ; } 2>&1 )
 if [[ "$output" != "" ]]; then
